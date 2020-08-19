@@ -1,0 +1,40 @@
+.grid-container {
+    display: grid;
+    width: 500px;
+    margin-top:50px;
+    margin-left:200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-template-areas:
+    "senha hist"
+    "guiche hist";
+}
+.senha{
+    grid-area: senha;
+}
+
+.guiche{
+    grid-area: guiche;
+}
+.historico{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: hist;
+    margin-bottom: auto;
+
+    grid-template-areas: 
+        "h h h"
+        "s g hora";
+}
+.historico .header{
+    grid-area: h;
+    justify-content: center;
+}
+.itens{
+    width: 200px
+}
+.itens ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
